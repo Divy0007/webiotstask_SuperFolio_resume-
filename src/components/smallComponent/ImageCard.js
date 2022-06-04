@@ -2,7 +2,7 @@ import React from 'react'
 
 const ImageCard = ({image}) => {
   return (
-    <div className='w-fluid mx-auto mt-5'>
+    <div className='w-fluid mx-auto mt-sm-5 mt-3'>
 
   <img src={image.url} className="card-img-top" alt="..."  height="150"/>
   <div className="card-body">

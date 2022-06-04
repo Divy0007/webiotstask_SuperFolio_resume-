@@ -11,11 +11,11 @@ const Content = () => {
   ];
   return (
     <div>
-      <div className="container w-75 clearfix mt-5 ">
-        <div className="row mt-5">
-          <div className="col col-12 col-sm-12 col-lg-6 mt-5">
+      <div className="container w-sm-75 clearfix ">
+        <div className="row">
+          <div className="col col-12 col-sm-12 col-md-6 col-lg-6 mt-sm-5 mt-4">
             <h2>Hello! I’m Walter Patterson.</h2>
-            <p className="mt-3">
+            <p className="mt-3" style={{textAlign: 'justify',}}>
               I am passionate about UI/UX design and Web Design. I am a skilled
               front-end developer and master of graphic design tools such as
               Photoshop and Sketch. I am a quick learner and a team worker that
@@ -39,12 +39,12 @@ const Content = () => {
             </ul>
           </div>
 
-          <div className="col col-12 col-sm-12  col-lg-6 mt-5">
+          <div className="col col-12 col-sm-12 col-md-6 col-lg-6 mt-sm-5 mt-3">
             <img
               src="https://demo.templateflip.com/super/images/avatar.jpg"
               alt="super folio pic"
               className=" mx-auto d-block img-fluid"
-              style={{ borderRadius: "30px" }}
+              style={{ borderRadius: "30px" , height: "370px"}}
             />
           </div>
         </div>

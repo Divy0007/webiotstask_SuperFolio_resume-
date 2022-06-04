@@ -29,7 +29,7 @@ const SignupSchema = Yup.object().shape({
 //start function component
 const Contact = () => {
   return (
-    <div className=" container-sm w-75 my-5 ">
+    <div className=" container-sm w-75 my-5  border border-secondary rounded-5 p-4 pt-0">
       <h1 className="text-center m-3">contact us</h1>
       <Formik
         initialValues={{
@@ -90,7 +90,7 @@ const Contact = () => {
             </div>
 
             {/* email input */}
-            <div className="mb-3">
+            <div className="col-md-6">
               <label htmlFor="exampleFormControlInput1" className="form-label">
                 Email address
               </label>
@@ -106,7 +106,7 @@ const Contact = () => {
             </div>
 
             {/* city input */}
-            <div className="col-md-6">
+            <div className="col-md-3">
               <label htmlFor="validationCustom03" className="form-label">
                 City
               </label>
@@ -131,7 +131,7 @@ const Contact = () => {
             <div
               role="group"
               aria-labelledby="checkbox-group"
-              className="form-check form-check-inline"
+              className="form-check form-check-inline col-12 mt-4"
             >
               <label className="form-check-label ms-2 me-5">
                 <Field
@@ -151,7 +151,7 @@ const Contact = () => {
                 />
                 For Meating
               </label>
-              <label className="form-check-label">
+              <label className="form-check-label ms-2">
                 <Field
                   type="checkbox"
                   name="checked"
@@ -166,7 +166,8 @@ const Contact = () => {
             <div
               role="group"
               aria-labelledby="my-radio-group"
-              className="form-check form-check-inline"
+              className="form-check form-check-inline col-12"
+              
             >
               <label className="form-check-label me-5 ms-2">
                 <Field
@@ -206,8 +207,8 @@ const Contact = () => {
             </div>
 
             {/* submit button */}
-            <div className="col-12">
-              <button type="submit" className="btn btn-primary">
+            <div className="col-12 d-flex justify-content-center">
+              <button type="submit" className="btn btn-primary w-25">
                 Submit
               </button>
             </div>
